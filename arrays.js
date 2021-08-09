@@ -75,3 +75,15 @@
     console.log("Duplicate numbers in given arrays are: " +[...new Set(duplicates)]);
     console.log("");
 }
+
+//Task_5---Find the Union and Intersection of the two sorted arrays
+{
+    console.log("Task_5---Find the Union and Intersection of the two sorted arrays");
+    console.log("-------------------------------------------------------------------------------------------");
+    let num_array_1 = [1,22,33,44,77];
+    let num_array_2 = [22,44,77,242,878];
+
+    console.log("Union: " +Array.from(new Set([...num_array_1,...num_array_2])));
+    console.log("Intersection: " +num_array_1.filter(element => num_array_2.includes(element)));
+    console.log("");
+}
