@@ -95,4 +95,17 @@
     for(let i=0;i<10;i++){
         console.log(Math.floor(Math.random()*1000));
     }
+    console.log("");
+}
+
+let random_array = [];
+//Store this random numbers into a array.
+{
+    console.log("Task_7---Store this random numbers into a array.");
+    console.log("-------------------------------------------------------------------------------------------");
+    for(let i=0;i<10;i++){
+        random_array.push(Math.floor(Math.random()*1000));
+    }
+    console.count("Array is: " +random_array);
+    console.log("");
 }
