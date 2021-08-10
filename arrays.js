@@ -87,3 +87,12 @@
     console.log("Intersection: " +num_array_1.filter(element => num_array_2.includes(element)));
     console.log("");
 }
+
+//Task_6---Generates 10 Random 3 Digit number
+{
+    console.log("Task_6---Generates 10 Random 3 Digit number");
+    console.log("-------------------------------------------------------------------------------------------");
+    for(let i=0;i<10;i++){
+        console.log(Math.floor(Math.random()*1000));
+    }
+}
