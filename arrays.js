@@ -134,3 +134,25 @@ let random_array = [];
     console.log("Second largest number\t:\t" +random_array[random_array.length-2]);
     console.log("");
 }
+
+//Task_10---Display prime factors of given number and store it in array
+{
+    console.log("Task_10---Display prime factors of given number and store it in array");
+    console.log("-------------------------------------------------------------------------------------------");
+    function primeFactors(n) {
+        const factors = [];
+        let divisor = 2;
+      
+        while (n >= 2) {
+          if (n % divisor == 0) {
+            factors.push(divisor);
+            n = n / divisor;
+          } else {
+            divisor++;
+          }
+        }
+        console.log("Prime factors of " +n +" are: " +factors);
+    }
+    primeFactors(100);
+    console.log("");
+}
