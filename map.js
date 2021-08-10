@@ -50,3 +50,29 @@
     maxMinTimes();
     console.log("");
 }
+
+//Task_14---Write a Program to generate a birth month of 50 individuals between the year 92 & 93. Find all the individuals having 
+//          birthdays in the same month. Store it to finally print.
+{
+    console.log("\t\tTask_14---Birthday Month");
+    console.log("-------------------------------------------------------------------------------------------");
+    console.log("");
+
+    let birthday_months_array = [];
+    let same_months = {};
+
+    for(let i=1;i<=12;i++){
+        same_months[i] = 0;
+    }
+    for(let i=0;i<50;i++){
+        let current_month = Math.floor(Math.random()*100%12)+1;
+        birthday_months_array.push(current_month);
+        same_months[current_month] = same_months[current_month]+1;
+    }
+    console.log("Month:\t" +"\t|\t" +"Number of individuals withe same birthday months");
+    console.log("-------------------------------------------------------------------------------------------");
+    for(let i=1;i<=12;i++){
+        console.log(i +"\t\t|\t" +same_months[i]);
+    }
+    console.log("");
+}
