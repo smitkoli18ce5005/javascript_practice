@@ -156,3 +156,36 @@ let random_array = [];
     primeFactors(100);
     console.log("");
 }
+
+//Task_11---Write a Program to show Sum of three Integer adds to ZERO
+{
+    console.log("Task_11---Write a Program to show Sum of three Integer adds to ZERO");
+    console.log("-------------------------------------------------------------------------------------------");
+    
+    let pairs = {};
+    let num_array = [-1,-1,2,3,-3,7,8,-4,-4,7,-7];
+    let isfound = false;
+    let key = 1;
+    for(let i=0;i<num_array.length-2;i++){
+        for(let j=i+1;j<num_array.length-1;j++){
+            for(let k=j+1;k<num_array.length;k++){
+                if(num_array[i] + num_array[j] + num_array[k] === 0){
+                    let pair_array = [];
+                    pair_array.push(num_array[i]);
+                    pair_array.push(num_array[j]);
+                    pair_array.push(num_array[k]);
+                    pairs["Pair: " +key] = pair_array;
+                    key += 1;
+                    isfound = true;
+                }
+            }
+        }
+    }
+    if(isfound){
+        console.log("Thare are: " +(key-1) +" pairs");
+        console.log(pairs);
+    }else{
+        console.log("No pairs");
+    }
+    console.log("");
+}
