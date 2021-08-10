@@ -104,8 +104,33 @@ let random_array = [];
     console.log("Task_7---Store this random numbers into a array.");
     console.log("-------------------------------------------------------------------------------------------");
     for(let i=0;i<10;i++){
-        random_array.push(Math.floor(Math.random()*1000));
+        random_array.push(Math.floor(Math.random()*(900-100+1)+100));
     }
-    console.count("Array is: " +random_array);
+    console.log("Array is: " +random_array);
+    console.log("");
+}
+
+//Task_8---Find the 2nd largest and the 2nd smallest element without sorting the array.
+{
+    console.log("Task_8---Find the 2nd largest and the 2nd smallest element without sorting the array.");
+    console.log("-------------------------------------------------------------------------------------------");
+
+    let working_array = random_array;
+    working_array = working_array.filter(item => item !== Math.min(...working_array));
+    working_array = working_array.filter(item => item !== Math.max(...working_array));
+    console.log("Array is: " +random_array);
+    console.log("Second smallest number\t:\t" +Math.min(...working_array));
+    console.log("Second largest number\t:\t" +Math.max(...working_array));
+    console.log("");
+}
+
+//Task_9---Program to sort the array and then find the 2nd largest and the 2nd smallest element.
+{
+    console.log("Task_9---Program to sort the array and then find the 2nd largest and the 2nd smallest element.");
+    console.log("-------------------------------------------------------------------------------------------");
+    random_array.sort();
+    console.log("Array is: " +random_array);
+    console.log("Second smallest number\t:\t" +random_array[1]);
+    console.log("Second largest number\t:\t" +random_array[random_array.length-2]);
     console.log("");
 }
