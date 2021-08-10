@@ -189,3 +189,23 @@ let random_array = [];
     }
     console.log("");
 }
+
+//Task_12---Take a range from 0 – 100, find the digits that are repeated twice like 33, 77,etc and store them in an array
+{
+    console.log("Task_12---Take a range from 0 – 100, find the digits that are repeated twice like 33, 77,etc and store them in an array");
+    console.log("-------------------------------------------------------------------------------------------");
+
+    let num_array = [];
+    let resulted_array = [];
+    for(let i=1;i<=100;i++){
+        num_array.push(i);
+    }
+    for(let i=0;i<num_array.length;i++){
+        if(num_array[i]%11 == 0){
+            resulted_array.push(num_array[i]);
+        }
+    }
+    console.log("Numbers that repeat twice are: ");
+    console.log(resulted_array);
+    console.log("");
+}
