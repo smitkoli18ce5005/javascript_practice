@@ -42,7 +42,7 @@
                 min_num = Object.keys(result)[i];
             }
         }
-        console.log("number that reached maximum times\t:\t" +min_num);
+        console.log("number that reached minimum times\t:\t" +min_num);
         console.log("number that reached maximum times\t:\t" +max_num);
     }
     console.log(storeResult());
